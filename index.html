@@ -28,7 +28,7 @@ import turtle
 import random
 import time
 screen = turtle.Screen()
-screen.setworldcoordinates(-500, -390, 500, 390)
+screen.setworldcoordinates(-500, -500, 500, 500)
 
 b=turtle.Turtle()
 b.speed(0)
@@ -684,14 +684,14 @@ def blink_text():
     writer.write(
         "CHÚC BA SINH NHẬT VUI VẺ",
         align="center",
-        font=("Comic Sans MS", 30, "bold italic")
+        font=("Arial", 40, "bold italic")
     )
     writer.goto(0, y_top)
     writer.color(random.choice(neon_colors))
     writer.write(
         "1/1/2025",
         align="center",
-        font=("Comic Sans MS",30 , "bold")
+        font=("Arial",40 , "bold")
     )
 
    
