@@ -28,7 +28,7 @@ import turtle
 import random
 import time
 screen = turtle.Screen()
-screen.setworldcoordinates(-420, -420, 420, 420)
+screen.setworldcoordinates(-500, -390, 500, 390)
 
 b=turtle.Turtle()
 b.speed(0)
@@ -677,9 +677,6 @@ def blink_text():
     y_bot = -(h_win / 2) + (h_win * 0.04)
     # y_top sẽ nằm cách cạnh trên màn hình khoảng 15%
     y_top = (h_win / 2) - (h_win * 0.15)
-    
-    # Cỡ chữ linh hoạt theo độ rộng màn hình
-    f_size = int(max(10, (w_win / 22) * 0.8)) 
 
     # Dòng chữ chúc mừng ở DƯỚI
     writer.goto(0, y_bot)
@@ -687,14 +684,14 @@ def blink_text():
     writer.write(
         "CHÚC BA SINH NHẬT VUI VẺ",
         align="center",
-        font=("Comic Sans MS", f_size, "bold italic")
+        font=("Comic Sans MS", 30, "bold italic")
     )
     writer.goto(0, y_top)
     writer.color(random.choice(neon_colors))
     writer.write(
         "1/1/2025",
         align="center",
-        font=("Comic Sans MS", f_size, "bold")
+        font=("Comic Sans MS",30 , "bold")
     )
 
    
